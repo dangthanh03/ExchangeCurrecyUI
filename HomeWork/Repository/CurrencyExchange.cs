@@ -1,4 +1,5 @@
 ﻿using HomeWork.IRepository;
+using HomeWork.Models;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Text.Json;
@@ -8,17 +9,17 @@ namespace HomeWork.Repository
     public class CurrencyExchange : ICurrencyExchange
     {
         private readonly HttpClient _httpClient;
-        public CurrencyExchange(HttpClient httpClient)
+        private readonly ApiSettingsService _apiSettingsService;
+        public CurrencyExchange(HttpClient httpClient, ApiSettingsService apiSettingsService)
         {
             _httpClient = httpClient;
+            _apiSettingsService = apiSettingsService;
         }
         public async Task<decimal> ExchangeCurrency(DateTime date, decimal amount, string currencyPair)
         {
-            // Convert the date to the required format (e.g., yyyy-MM-dd)
+            var apiConfig = _apiSettingsService.GetApiConfiguration();
             string formattedDate = date.ToString("yyyy-MM-dd");
-
-            // Construct the URL with the provided parameters
-            var apiUrl = $"http://localhost:100/api/CurrencyExchange?date={formattedDate}&amount={amount}&currencyPair={currencyPair}";
+            var apiUrl = $"{apiConfig.BaseUrl}{apiConfig.CurrencyExchangeEndpoint}?date={formattedDate}&amount={amount}&currencyPair={currencyPair}";
 
             // Send a GET request to the API
             HttpResponseMessage response = await _httpClient.GetAsync(apiUrl);
@@ -39,8 +40,8 @@ namespace HomeWork.Repository
 
         public async Task<string[]> GetCurrencyPairs()
         {
-            var apiUrl = "http://localhost:100/api/CurrencyExchange/currencyPairs";
-
+            var apiConfig = _apiSettingsService.GetApiConfiguration();
+            var apiUrl = $"{apiConfig.BaseUrl}{apiConfig.CurrencyPairsEndpoint}";
             // Gửi yêu cầu HTTP GET đến API và nhận phản hồi
             HttpResponseMessage response = await _httpClient.GetAsync(apiUrl);
             response.EnsureSuccessStatusCode();

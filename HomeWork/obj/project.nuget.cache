@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "bB4v9/5AmbaaECqp0ntlXxsbOITu9vaDBx5KGScL52GVtBm0+B8VGZvO5qGb4NcSUY5o4cjp40ZMj73bBYBAig==",
+  "dgSpecHash": "1SyNA3tYkVYhFDV0j/ZKS3X2HrgbiTU37dxh0pfr174zicgAP5MlFs8HvJbMq8x/ngSF5bPnbzgQL2W7xt6Z6w==",
   "success": true,
   "projectFilePath": "D:\\MVC\\BTVN\\HomeWork\\HomeWork\\HomeWork.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Tri Thanh\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
+    "C:\\Users\\Tri Thanh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Tri Thanh\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Tri Thanh\\.nuget\\packages\\newtonsoft.json\\6.0.1\\newtonsoft.json.6.0.1.nupkg.sha512",
+    "C:\\Users\\Tri Thanh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Tri Thanh\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
     "C:\\Users\\Tri Thanh\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
     "C:\\Users\\Tri Thanh\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",

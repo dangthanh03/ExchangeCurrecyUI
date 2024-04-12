@@ -31,3 +31,4 @@ D:\MVC\BTVN\HomeWork\HomeWork\obj\Debug\net6.0\refint\HomeWork.dll
 D:\MVC\BTVN\HomeWork\HomeWork\obj\Debug\net6.0\HomeWork.pdb
 D:\MVC\BTVN\HomeWork\HomeWork\obj\Debug\net6.0\HomeWork.genruntimeconfig.cache
 D:\MVC\BTVN\HomeWork\HomeWork\obj\Debug\net6.0\ref\HomeWork.dll
+D:\MVC\BTVN\HomeWork\HomeWork\obj\Debug\net6.0\HomeWork.sourcelink.json

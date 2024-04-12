@@ -1,4 +1,5 @@
 using HomeWork.IRepository;
+using HomeWork.Models;
 using HomeWork.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews(); 
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<ICurrencyExchange,CurrencyExchange>();
-
+builder.Services.AddSingleton<ApiSettingsService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
